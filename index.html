@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <title>Tip calculator</title>
+  <!-- link custom css -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <!-- link normalise css -->
+  <link rel="stylesheet" href="./styles/normalize.css">
+</head>
+<body>
+  <h1 class="title">S P L I <br> T T E R</h1>
+  <!-- main container -->
+<main class="main-card">
+  <!-- left container -->
+  <div class="left-container">
+    <div class="form-control">
+      <label for="bill" class="input input-bill">Bill</label>
+      <input type="number"
+       class="bill" 
+       name="bill"
+        id="bill-input">
+    </div>
+    <div class="form-control">
+      <h2 class="subtitle-1">Select tip %</h2>
+
+        <div class="tip-container">
+          <input type="button"
+          class="tip-percent"
+          ="tip-percent"
+          value="5"
+          />
+          <input type="button"
+          class="tip-percent"
+          name="tip-percent"
+          value="10"
+          />
+          <input type="button"
+          class="tip-percent"
+          name="tip-percent"
+          value="15"
+          />
+          <input type="button"
+          class="tip-percent"
+          name="tip-percent"
+          value="25"
+          />
+          <input type="button"
+          class="tip-percent"
+          name="tip-percent"
+          value="50"
+          />
+          <input type="number"
+          placeholder="Custom"
+          class="custom-percent"
+          id="custom-tip"
+          />
+      </div>
+        </div>
+    <div class="form-control">
+      <!-- error message -->
+      <div class="error-mgs">
+        <label for="person" class="input input-people">No of people</label>
+        <p class="error-message" id="error-message">can't be zero</p>
+      </div>
+      
+      <input type="number"
+        class="person" 
+        name="person"
+        id="person-input">
+    </div>
+
+  </div>
+  <!-- right container -->
+  <div class="right-container">
+    <div class="output-container">
+      <div class="output tip-amount">
+        <div class="output-left">
+          <p class="main-title">tip amount</p>
+          <p class="subtitle">/person </p>
+        </div>
+        <div class="output-right" id="tip-amount">$4.27</div>
+      </div>
+      <div class="output total-amount">
+        <div class="output-left">
+          <p class="main-title">total</p>
+          <p class="subtitle">/person </p>
+        </div>
+        <div class="output-right" id="total-amount">$759</div>
+      </div>
+      
+    </div>
+    <!-- reset button -->
+    <button class="btn btn-reset" id="btn-reset">reset</button>
+  
+  </div>
+
+</main>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
